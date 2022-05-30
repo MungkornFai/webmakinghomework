@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ html {
   background-color: #0e141f;
   justify-content: center;
   align-items: center;
-  z-index: 20;
+  z-index: 2;
   position: fixed;
   border-bottom: 1px solid #29303d;
   box-shadow: 0 1rem 5rem -0.5rem #000;
@@ -37,7 +37,7 @@ html {
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 900;
   cursor: pointer;
   background: #ff0a6c;
   background: -webkit-linear-gradient(left, #ff0a6c 0%, #2d27ff 100%);
@@ -115,154 +115,108 @@ html {
   width: 100%;
   height: 100%;
   background: #000;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bg-color {
+.container {
   width: 100%;
   height: 400px;
-  background: #00e5ff;
-  background: -webkit-linear-gradient(bottom, #00e5ff 0%, #0014ff 100%);
+  background: #001727;
+  background: -webkit-linear-gradient(
+    left,
+    #001727 0%,
+    #6b33dd 45%,
+    #2d19e7 100%
+  );
 }
 
-.content-container {
-  margin: 0 auto;
-  max-width: 900px;
+.section-container {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
   height: 100%;
-}
-
-.header-content {
-  width: 100%;
-  height: 500px;
-  background-color: #0e141f;
-  position: relative;
-  top: -200px;
-  border-radius: 5px;
-}
-
-.image {
-  width: 100%;
-  height: 350px;
-  background-image: url(/images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.desc span {
   display: flex;
-  color: #fff;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-button {
-  /* margin-left: 1rem; */
-  /* margin-top: 1.5rem; */
-  background-color: transparent;
-  border: none;
-}
-
-button a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
- 
-}
-
-.ntn-bigbox {
-    margin-left: 1rem;
-}
-
-button a:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  transform-origin: bottom right;
-  transform: scaleX(0);
-  transition: transform 0.25s ease-out;
-  background: #00e5ff;
-}
-
-button a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.contentone {
-  display: flex;
-  width: 100%;
-  background-color: #fff;
+.profile-pic {
+  width: 200px;
   height: 200px;
-  margin-top: -150px;
-  transition: transform 0.25s ease-out;
-  position: relative;
-  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid blue;
+  position: absolute;
+  left: 0;
+  top: 35%;
 }
 
-.contentone:hover {
-  transform: scaleX(1.1);
-}
-
-.image_inbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 100%;
-    
-}
-
-
-.bg-gradient1 {
-    background: #00E5FF;
-    background: linear-gradient(to top right, #00E5FF 0%, #1200FF 100%);
-}
-
-.bg-gradient2 {
-    background: #00C0FF;
-    background: linear-gradient(to top left, #00E5FF 0%, #421BB8 100%);
-}
-.bg-gradient3 {
-    background: #00FFA9;
-    background: linear-gradient(to bottom right, #00FFA9 0%, #0D4DFF 100%);
-}
-
-.inside-bg {
-    position: absolute;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 800;
-    text-decoration: none;
-}
-.btn-one {
-    position: absolute;
-    color: #000;
-    padding-top: 2rem;
-    
-}
-
-
-.content_inbox {
-   padding: 50px 80px;
+h1,
+h2 {
+  position: absolute;
+  color: #fff;
+  font-family: "Righteous", cursive;
+  right: 0;
+  padding-right: 1rem;
 }
 
 h1 {
-    position: absolute;
-    display: flex;
-    color: #000;
-    text-decoration: none;
+  font-size: 4rem;
 }
 
-.card2 {
-    margin-top: 2rem;
+h2 {
+  font-size: 3rem;
+  color: rgb(183, 179, 179);
+  margin-top: 8rem;
+  margin-right: 4rem;
 }
- 
-.card3 {
-    margin-top: 2rem;
+
+.profile {
+  max-width: 1000px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.title{
+  position: absolute;
+  left: 0;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.homepic {
+  width: 300px;
+  height: 300px;
+
+}
+
+.info-container {
+  display: flex;
+  margin-top: 5rem;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  
+  /* background-color: blue; */
+}
+
+.info {
+  width: 500px;
+  /* background-color: #00e5ff; */
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  
+}
+
+p {
+  color: #fff;
+  font-size: 25px;
 }
