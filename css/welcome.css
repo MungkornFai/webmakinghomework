@@ -14,7 +14,7 @@ body {
     color: #fff;
 }
 
-.container {
+.container-welcome {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,10 +42,10 @@ span {
     margin: 2rem;
     padding: 8px 20px;
     border-radius: 5px;
-    background: #2F2F2F;
+    background: transparent;
     outline: none;
-    transition: all 0.3s ease-in;
-    border: none;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid blue;
 }
 
 .btn a {
@@ -56,9 +56,9 @@ span {
 }
 
 .btn:hover{
-    background: rgb(124, 123, 123);
-    color: #000;
-    border: 1px solid #00ff5b;
+    box-shadow: 0 0 20px 0 blue;
+    background-color: blue;
+    color: #fff;
 }
 
 
